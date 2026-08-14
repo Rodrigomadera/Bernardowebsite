@@ -3,31 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jiménez Duarte y Asociados — Abogados | Derecho Familiar | Cancún</title>
-    <meta name="description" content="Jiménez Duarte y Asociados. Abogado con 25 años de experiencia en derecho familiar, juicios orales y tradicionales, conciliaciones, gestiones notariales, registrales e inmobiliarias en Cancún y el sur de México. Egresado de la Universidad Autónoma de Quintana Roo.">
+    <title>Lic. Bernardo Roberto Jiménez Duarte — Abogado | Derecho Familiar | Chetumal y Cancún</title>
+    <meta name="description" content="Abogado en Chetumal y Cancún, Quintana Roo. Derecho familiar y derecho público y administrativo. Maestría en Anticorrupción y Sistema de Justicia. Ex secretario del Juzgado Familiar Oral de Chetumal.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --ink: #0a0a0a;
+            --ink: #0b1d2e;
             --paper: #ffffff;
-            --muted: #6b6b6b;
-            --light: #f5f5f5;
-            --border: #e5e5e5;
-            --accent: #1a1a1a;
-            --warm: #8c7b6c;
+            --muted: #5a6573;
+            --light: #f4f6f8;
+            --border: #dde3ea;
+            --accent: #b8860b;
+            --accent-2: #1f3a52;
+            --navy: #0b1d2e;
+            --warm: #6b5b4d;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
@@ -35,6 +30,7 @@
             background: var(--paper);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
+            padding-top: 64px;
         }
 
         /* Navigation */
@@ -47,13 +43,12 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border);
-            transition: all 0.3s ease;
         }
 
         .nav-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 1.2rem 3rem;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -61,9 +56,9 @@
 
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             color: var(--ink);
             text-decoration: none;
             display: flex;
@@ -72,29 +67,29 @@
         }
 
         .logo-icon {
-            width: 36px;
-            height: 36px;
+            width: 32px;
+            height: 32px;
             border: 2px solid var(--ink);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 0.85rem;
             font-weight: 700;
         }
 
         .nav-links {
             display: flex;
-            gap: 2.5rem;
+            gap: 2rem;
             list-style: none;
         }
 
         .nav-links a {
             color: var(--ink);
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 500;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.06em;
             text-transform: uppercase;
             position: relative;
             padding: 0.3rem 0;
@@ -108,13 +103,11 @@
             left: 0;
             width: 0;
             height: 1px;
-            background: var(--ink);
+            background: var(--accent);
             transition: width 0.3s ease;
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+        .nav-links a:hover::after { width: 100%; }
 
         .mobile-menu-btn {
             display: none;
@@ -126,74 +119,73 @@
 
         .mobile-menu-btn span {
             display: block;
-            width: 24px;
+            width: 22px;
             height: 2px;
             background: var(--ink);
-            margin: 5px 0;
+            margin: 4px 0;
             transition: all 0.3s ease;
         }
 
-        /* Hero Section */
+        /* Hero */
         .hero {
-            min-height: 100vh;
+            min-height: 92vh;
             display: flex;
             align-items: center;
-            padding: 8rem 3rem 4rem;
+            padding: 7rem 2rem 4rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
             position: relative;
             overflow: hidden;
         }
 
         .hero-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
         }
 
-        .hero-content {
-            animation: fadeInUp 1s ease-out;
-        }
+        .hero-content { animation: fadeInUp 1s ease-out; }
 
         .hero-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--muted);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         .hero-title {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
             font-weight: 600;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
             letter-spacing: -0.02em;
         }
 
         .hero-subtitle {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: var(--muted);
-            margin-bottom: 2.5rem;
-            max-width: 500px;
+            margin-bottom: 2rem;
+            max-width: 480px;
             font-weight: 300;
         }
 
         .hero-cta {
             display: inline-flex;
-            gap: 1rem;
+            gap: 0.8rem;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 1rem 2rem;
-            font-size: 0.85rem;
+            padding: 0.9rem 1.8rem;
+            font-size: 0.8rem;
             font-weight: 500;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.06em;
             text-transform: uppercase;
             text-decoration: none;
             border: 1px solid var(--ink);
@@ -204,20 +196,14 @@
             display: inline-block;
         }
 
-        .btn:hover {
-            background: transparent;
-            color: var(--ink);
-        }
+        .btn:hover { background: transparent; color: var(--ink); }
 
         .btn-outline {
             background: transparent;
             color: var(--ink);
         }
 
-        .btn-outline:hover {
-            background: var(--ink);
-            color: var(--paper);
-        }
+        .btn-outline:hover { background: var(--ink); color: var(--paper); }
 
         .hero-image {
             position: relative;
@@ -230,13 +216,14 @@
             filter: grayscale(100%);
             border-radius: 2px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            display: block;
         }
 
         .hero-image::before {
             content: '';
             position: absolute;
-            top: -20px;
-            right: -20px;
+            top: -16px;
+            right: -16px;
             width: 100%;
             height: 100%;
             border: 2px solid var(--ink);
@@ -246,42 +233,37 @@
 
         .photo-caption {
             position: absolute;
-            bottom: 12px;
+            bottom: 10px;
             left: 0;
             right: 0;
             text-align: center;
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             font-weight: 400;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             color: rgba(0, 0, 0, 0.45);
             pointer-events: none;
-            line-height: 1.4;
         }
 
-        /* Section Styles */
+        /* Sections */
         section {
-            padding: 8rem 3rem;
-            max-width: 1400px;
+            padding: 5rem 2rem;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        .section-header {
-            margin-bottom: 4rem;
-        }
-
         .section-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--muted);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .section-title {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
             font-weight: 600;
             line-height: 1.2;
             margin-bottom: 1rem;
@@ -289,25 +271,23 @@
         }
 
         .section-subtitle {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--muted);
-            max-width: 600px;
+            max-width: 640px;
             font-weight: 300;
         }
 
-        /* About Section */
+        /* About */
         .about {
-            background: var(--light);
-            max-width: none;
-            padding: 8rem 3rem;
+            background: var(--paper);
         }
 
         .about-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
         }
 
@@ -320,41 +300,13 @@
             height: auto;
             filter: grayscale(100%);
             border-radius: 2px;
+            display: block;
         }
 
-        .about-image::after {
-            content: '25+';
-            position: absolute;
-            bottom: -20px;
-            right: -20px;
-            background: var(--ink);
-            color: var(--paper);
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .about-content h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 600;
-            flex-direction: column;
-            line-height: 1;
-        }
-
-        .about-image::after span {
-            font-size: 0.7rem;
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-top: 0.3rem;
-        }
-
-        .about-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
             font-weight: 600;
         }
 
@@ -366,70 +318,59 @@
 
         .about-stats {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 2.5rem;
-            padding-top: 2.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
             border-top: 1px solid var(--border);
         }
 
-        .stat {
-            text-align: center;
-        }
+        .stat { text-align: center; }
 
         .stat-number {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 600;
             line-height: 1;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
         .stat-label {
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             color: var(--muted);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.12em;
         }
 
         /* Practice Areas */
-        .practice-areas {
-            max-width: none;
-            padding: 8rem 3rem;
-            background: var(--ink);
+        .practice {
+            background: var(--navy);
             color: var(--paper);
+            max-width: none;
+            padding: 5rem 2rem;
         }
 
         .practice-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        .practice-areas .section-label {
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .practice-areas .section-title {
-            color: var(--paper);
-        }
-
-        .practice-areas .section-subtitle {
-            color: rgba(255, 255, 255, 0.7);
-        }
+        .practice .section-label { color: rgba(255,255,255,0.6); }
+        .practice .section-title { color: var(--paper); }
+        .practice .section-subtitle { color: rgba(255,255,255,0.7); }
 
         .practice-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
         }
 
         .practice-card {
-            padding: 2.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.12);
             border-radius: 2px;
             transition: all 0.3s ease;
-            cursor: pointer;
             position: relative;
             overflow: hidden;
         }
@@ -441,234 +382,258 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background: var(--paper);
+            background: var(--accent);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.3s ease;
         }
 
-        .practice-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .practice-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
+        .practice-card:hover::before { transform: scaleX(1); }
+        .practice-card:hover { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.25); }
 
         .practice-icon {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.8;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 1.2rem;
+            color: var(--accent);
         }
 
         .practice-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
             font-weight: 600;
         }
 
         .practice-card p {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255,255,255,0.7);
             font-weight: 300;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
-        /* Experience Section */
-        .experience {
-            max-width: none;
-            padding: 8rem 3rem;
-            background: var(--paper);
+        .other-matters {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
         }
 
-        .experience-container {
-            max-width: 1400px;
-            margin: 0 auto;
+        .other-matters h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.9);
         }
+
+        .other-matters-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1.2rem;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        /* Experience */
+        .experience { background: var(--paper); }
 
         .timeline {
             display: grid;
-            gap: 3rem;
-            margin-top: 3rem;
+            gap: 0;
+            margin-top: 2.5rem;
         }
 
-        .timeline-item {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 3rem;
-            padding: 2rem 0;
+        .timeline-block {
+            padding: 1.8rem 0;
             border-bottom: 1px solid var(--border);
-            transition: all 0.3s ease;
         }
 
-        .timeline-item:hover {
-            padding-left: 1rem;
+        .timeline-block:last-child { border-bottom: none; }
+
+        .timeline-block-header {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 2rem;
+            align-items: baseline;
         }
 
-        .timeline-year {
+        .timeline-period {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: 600;
+            color: var(--accent);
+        }
+
+        .timeline-block-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline-block-role {
+            font-size: 0.9rem;
             color: var(--muted);
+            font-weight: 500;
+            margin-bottom: 0.6rem;
         }
 
-        .timeline-content h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .timeline-content p {
+        .timeline-block-desc {
             color: var(--muted);
             font-weight: 300;
+            font-size: 0.9rem;
+            line-height: 1.7;
         }
 
-        /* Education */
-        .education {
-            max-width: none;
-            padding: 8rem 3rem;
-            background: var(--light);
-        }
+        /* FAQ */
+        .faq { background: var(--light); max-width: none; padding: 5rem 2rem; }
 
-        .education-container {
-            max-width: 1400px;
+        .faq-container {
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+        .faq-item {
+            border-bottom: 1px solid var(--border);
         }
 
-        .education-card {
-            padding: 2.5rem;
-            background: var(--paper);
-            border-radius: 2px;
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-
-        .education-card:hover {
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            transform: translateY(-4px);
-        }
-
-        .education-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.2rem 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
             font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--ink);
         }
 
-        .education-card .institution {
-            color: var(--muted);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            font-weight: 500;
+        .faq-question:hover { color: var(--accent); }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--accent);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
         }
 
-        .education-card p {
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+            padding-bottom: 1.2rem;
+        }
+
+        .faq-answer p {
             color: var(--muted);
             font-weight: 300;
-            font-size: 0.95rem;
+            line-height: 1.7;
         }
 
-        /* Contact Section */
+        /* Contact */
         .contact {
-            max-width: none;
-            padding: 8rem 3rem;
-            background: var(--ink);
+            background: var(--navy);
             color: var(--paper);
+            max-width: none;
+            padding: 5rem 2rem;
         }
 
         .contact-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
         }
 
         .contact-info h2 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 4vw, 3rem);
-            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
             font-weight: 600;
         }
 
-        .contact-info p {
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 2rem;
+        .contact-info > p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
             font-weight: 300;
         }
 
         .contact-details {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1.2rem;
+            margin-bottom: 2rem;
         }
 
         .contact-item {
             display: flex;
-            align-items: center;
-            gap: 1rem;
-            color: rgba(255, 255, 255, 0.9);
+            align-items: flex-start;
+            gap: 0.8rem;
+            color: rgba(255,255,255,0.9);
         }
 
         .contact-item-icon {
-            width: 40px;
-            height: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 36px;
+            height: 36px;
+            border: 1px solid rgba(255,255,255,0.25);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-        }
-
-        .contact-item-text {
-            font-weight: 400;
+            flex-shrink: 0;
         }
 
         .contact-item-label {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.65rem;
+            color: rgba(255,255,255,0.55);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.12em;
             margin-bottom: 0.2rem;
         }
+
+        .contact-item-text { font-weight: 400; }
 
         .contact-form {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1.2rem;
         }
 
         .form-group {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
 
         .form-group label {
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             font-weight: 500;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255,255,255,0.6);
         }
 
         .form-group input,
         .form-group textarea {
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.9rem;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.18);
             color: var(--paper);
             font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
             border-radius: 2px;
         }
@@ -676,62 +641,144 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: var(--paper);
-            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.1);
         }
 
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
+        .form-group textarea { min-height: 100px; resize: vertical; }
+
+        .consent {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.55);
         }
+
+        .consent input { margin-top: 0.2rem; }
+
+        .consent a { color: var(--accent); text-decoration: underline; }
 
         .contact-form .btn {
-            background: var(--paper);
-            color: var(--ink);
-            border-color: var(--paper);
+            background: var(--accent);
+            color: var(--paper);
+            border-color: var(--accent);
+            align-self: flex-start;
         }
 
-        .contact-form .btn:hover {
-            background: transparent;
+        .contact-form .btn:hover { background: transparent; color: var(--accent); }
+
+        .form-success {
+            display: none;
+            padding: 1rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid var(--accent);
+            border-radius: 2px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
             color: var(--paper);
+        }
+
+        /* Confidentiality + Fees */
+        .disclaimer-block {
+            background: var(--light);
+            border-left: 3px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            border-radius: 2px;
+            margin-bottom: 1.5rem;
+        }
+
+        .disclaimer-block h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            color: var(--ink);
+        }
+
+        .disclaimer-block p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            font-weight: 300;
+            margin: 0;
         }
 
         /* Footer */
         footer {
-            padding: 3rem;
-            background: var(--ink);
-            color: rgba(255, 255, 255, 0.6);
+            padding: 2.5rem 2rem;
+            background: #061420;
+            color: rgba(255,255,255,0.5);
             text-align: center;
-            font-size: 0.85rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
         }
 
-        footer strong {
-            color: var(--paper);
+        footer strong { color: var(--paper); }
+
+        .footer-cédula {
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.4);
+            margin-top: 0.4rem;
         }
+
+        .footer-cédula a { color: rgba(255,255,255,0.6); text-decoration: none; }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            list-style: none;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.75rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .footer-nav a:hover { color: var(--paper); }
+
+        /* WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            z-index: 999;
+            transition: transform 0.2s ease;
+        }
+
+        .whatsapp-float:hover { transform: scale(1.08); }
+
+        .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
 
         /* Scroll Progress */
         .scroll-progress {
             position: fixed;
-            top: 0;
+            top: 64px;
             left: 0;
             width: 0%;
             height: 2px;
-            background: var(--ink);
+            background: var(--accent);
             z-index: 1001;
             transition: width 0.1s ease;
         }
 
         /* Animations */
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeIn {
@@ -748,16 +795,6 @@
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
-        }
-
-        /* Infinite Scroll Loader */
-        .scroll-loader {
-            text-align: center;
-            padding: 3rem;
-            color: var(--muted);
-            font-size: 0.85rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
         }
 
         /* Responsive */
@@ -782,397 +819,599 @@
                 border-bottom: 1px solid var(--border);
             }
 
-            .nav-links.active {
-                display: flex;
-            }
+            .nav-links.active { display: flex; }
 
-            .mobile-menu-btn {
-                display: block;
-            }
+            .mobile-menu-btn { display: block; }
 
-            .timeline-item {
+            .timeline-block-header {
                 grid-template-columns: 1fr;
-                gap: 1rem;
+                gap: 0.6rem;
             }
 
             section,
-            .about,
-            .practice-areas,
-            .experience,
-            .education,
+            .practice,
+            .faq,
             .contact {
-                padding: 5rem 1.5rem;
+                padding: 4rem 1.5rem;
             }
 
-            .nav-container {
-                padding: 1rem 1.5rem;
-            }
+            .nav-container { padding: 1rem 1.5rem; }
 
-            .about-image::after {
-                width: 80px;
-                height: 80px;
-                font-size: 1.5rem;
-            }
-
-            .about-image::after span {
-                font-size: 0.6rem;
-            }
+            .about-stats { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 480px) {
-            .hero-cta {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-                text-align: center;
-            }
-
-            .about-stats {
-                grid-template-columns: 1fr;
-            }
+            .hero-cta { flex-direction: column; }
+            .btn { width: 100%; text-align: center; }
+            .about-stats { grid-template-columns: 1fr; }
         }
     </style>
 </head>
-<body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
+<body itemscope itemtype="https://schema.org/LegalService">
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
     <!-- Navigation -->
-    <nav>
+    <nav role="navigation" aria-label="Principal">
         <div class="nav-container">
-            <a href="#inicio" class="logo">
-                <div class="logo-icon">JD</div>
+            <a href="#inicio" class="logo" aria-label="Jiménez Duarte y Asociados — Inicio">
+                <div class="logo-icon" aria-hidden="true">JD</div>
                 Jiménez Duarte y Asociados
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#areas">Áreas</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#trayectoria">Trayectoria</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="inicio" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-label">Bufete de Abogados · Cancún</div>
-                <h1 class="hero-title">Derecho Familiar<br>con Experiencia<br>y Compromiso</h1>
+                <div class="hero-label">Abogado · Derecho Familiar y Público · Quintana Roo</div>
+                <h1 class="hero-title">Derecho familiar con conocimiento <br>real del juzgado.</h1>
                 <p class="hero-subtitle">
-                    Más de 25 años litigando en materia familiar. Juicios orales y tradicionales, 
-                    conciliaciones y gestiones integrales para proteger lo que más importa.
+                    Lic. Bernardo Roberto Jiménez Duarte. Egresado de la Universidad de Quintana Roo.
+                    Maestría en Anticorrupción y Sistema de Justicia. Base en Chetumal, cobertura en todo el estado.
                 </p>
                 <div class="hero-cta">
-                    <a href="#contacto" class="btn">Consultar Ahora</a>
-                    <a href="#areas" class="btn btn-outline">Áreas de Práctica</a>
+                    <a href="https://wa.me/529831253759?text=Hola%2C%20licenciado.%20Me%20gustar%C3%ADa%20agendar%20una%20consulta." class="btn" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+                    <a href="#areas" class="btn btn-outline">Áreas de práctica</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/hf_20260814_192616_f21457e1-09dd-4382-b81f-94993b023e1d.png" 
-                     alt="Abogado Jiménez Duarte - Profesional con experiencia en derecho familiar"
-                     loading="eager">
-                <div class="photo-caption">Abogado Bernardo R. Jiménez Duarte</div>
+                <img src="images/hf_20260814_192616_f21457e1-09dd-4382-b81f-94993b023e1d.png" alt="Lic. Bernardo Roberto Jiménez Duarte" width="800" height="1000" loading="eager">
+                <div class="photo-caption" aria-hidden="true">Lic. Bernardo R. Jiménez Duarte</div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="nosotros" class="about">
+    <!-- Perfil / Sobre mí -->
+    <section id="perfil" class="about">
         <div class="about-container">
             <div class="about-image">
-                <img src="images/hf_20260814_192309_0ac0d323-9d76-41ca-9a79-107dc3c9fa79(1).png" 
-                     alt="Abogado Jiménez Duarte en su despacho"
-                     loading="lazy">
-                <div class="photo-caption">Abogado Bernardo R. Jiménez Duarte</div>
+                <img src="images/hf_20260814_192309_0ac0d323-9d76-41ca-9a79-107dc3c9fa79(1).png" alt="Lic. Bernardo Roberto Jiménez Duarte en su despacho" width="800" height="1000" loading="lazy">
+                <div class="photo-caption" aria-hidden="true">Lic. Bernardo R. Jiménez Duarte</div>
             </div>
             <div class="about-content fade-in">
-                <div class="section-label">Sobre Nosotros</div>
-                <h3>Lic. Bernardo Roberto Jiménez Duarte</h3>
+                <div class="section-label">Perfil</div>
+                <h2>Sobre mí</h2>
                 <p>
-                    Abogado egresado de la Universidad de Quintana Roo, con más de 25 años de trayectoria 
-                    en materia familiar y amplia experiencia en juicios orales y tradicionales. Cuenta con 
-                    estudios de Maestría en Anticorrupción y Sistema de Justicia.
+                    Soy abogado egresado de la <strong>Universidad de Quintana Roo</strong>, con maestría en
+                    <strong>Anticorrupción y Sistema de Justicia</strong> y más de 24 años de trayectoria jurídica.
+                    Actualmente atiendo casos en <strong>Chetumal</strong> y <strong>Cancún</strong>, con cobertura en todo Quintana Roo.
                 </p>
                 <p>
-                    Su carrera dentro del Poder Judicial —como Secretario de Actas en el Juzgado Familiar Oral 
-                    del Distrito Judicial de Chetumal y Secretario Auxiliar en el Juzgado Mercantil— le otorga 
-                    un conocimiento profundo del funcionamiento de los tribunales y de los criterios con los 
-                    que se resuelven los asuntos.
+                    Mi trayectoria combina dos vertientes. Por un lado, el <strong>derecho familiar</strong>: trabajé dentro del
+                    <strong>Juzgado Familiar Oral de Chetumal</strong> elaborando proyectos de sentencia, lo que me permite
+                    entender cómo razona un juez en materia familiar. Por el otro, el <strong>derecho público y administrativo</strong>,
+                    con experiencia como Titular de Órgano Interno de Control, investigador de responsabilidades
+                    administrativas y secretario en materia electoral.
                 </p>
                 <p>
-                    Como Socio Fundador de Soluciones Jurídicas y abogado en el Instituto Quintanarroense de 
-                    la Mujer, ha litigado en las materias familiar, civil, mercantil, agraria y penal, 
-                    defendiendo casos de alta sensibilidad social.
-                </p>
-                <p>
-                    Hoy brinda asesoría y representación legal en Cancún y el sur de Quintana Roo, con 
-                    atención personalizada en derecho familiar, conciliaciones y gestiones integrales, 
-                    acompañando a cada cliente durante todo el proceso.
+                    Actualmente ejerzo la abogacía de forma particular, con atención personalizada en cada caso.
                 </p>
                 <div class="about-stats">
                     <div class="stat">
-                        <div class="stat-number">25+</div>
-                        <div class="stat-label">Años de Experiencia</div>
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">Años de trayectoria</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Cargos Judiciales y Públicos</div>
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Materias litigadas</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">1000+</div>
-                        <div class="stat-label">Casos Atendidos</div>
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Cargos en el Poder Judicial</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">Maestría</div>
+                        <div class="stat-label">Anticorrupción y Sistema de Justicia</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Practice Areas -->
-    <section id="areas" class="practice-areas">
+    <!-- Áreas de práctica -->
+    <section id="areas" class="practice">
         <div class="practice-container">
             <div class="section-header fade-in">
-                <div class="section-label">Especialidades</div>
-                <h2 class="section-title">Áreas de Práctica</h2>
+                <div class="section-label">Áreas de práctica</div>
+                <h2 class="section-title">Derecho familiar y derecho público</h2>
                 <p class="section-subtitle">
-                    Enfocados en derecho familiar con servicios integrales que incluyen gestión 
-                    notarial, registral e inmobiliaria para ofrecer soluciones completas.
+                    Dos bloques claros: defensa directa en materia familiar y asesoría estratégica
+                    en derecho público y administrativo.
                 </p>
             </div>
+
             <div class="practice-grid">
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">⚖️</div>
-                    <h3>Derecho Familiar</h3>
-                    <p>Asesoría especializada en divorcios, custodia, pensión alimenticia, régimen de visitas, adopciones y todos los asuntos familiares.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M20 21v-2a4 4 0 00-3-3.87M9 7h.01M15 7h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3>Divorcio incausado y contencioso</h3>
+                    <p>Trámite de divorcio en Quintana Roo, con o sin acuerdo. Me encargo de la estrategia procesal y de la protección de tus derechos.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">🏛️</div>
-                    <h3>Juicios Orales</h3>
-                    <p>Amplia experiencia en juicios orales familiares y tradicionales, con estrategias probadas para proteger sus derechos.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M17 21v-2a4 4 0 00-3-3.87M9 7h.01M15 7h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3>Guarda y custodia</h3>
+                    <p>Defensa de la custodia de menores, convenios de convivencia y protección del interés superior del niño.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">🤝</div>
-                    <h3>Conciliaciones</h3>
-                    <p>Mediación y conciliación para resolver conflictos familiares de manera rápida, efectiva y menos conflictiva.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M20 21v-2a4 4 0 00-3-3.87M9 7h.01M15 7h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3>Pensión alimenticia</h3>
+                    <p>Cálculo, fijación, modificación y cobro de pensión alimenticia. Defiendo el derecho de quienes la necesitan y la razonabilidad de quien la debe pagar.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">📋</div>
-                    <h3>Gestiones Notariales</h3>
-                    <p>Trámites notariales integrales: testamentos, poderes, compraventas, donaciones y toda clase de instrumentos públicos.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M20 21v-2a4 4 0 00-3-3.87M9 7h.01M15 7h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3>Régimen de convivencia</h3>
+                    <p>Regulación de visitas, convivencias y distribución de tiempo con los hijos, siempre buscando el acuerdo y, si no es posible, la vía judicial.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">🏠</div>
-                    <h3>Gestiones Inmobiliarias</h3>
-                    <p>Asesoría en compraventa de bienes inmuebles, contratos de arrendamiento, regularización de propiedades y más.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <h3>Violencia familiar y órdenes de protección</h3>
+                    <p>Atención inmediata en casos de violencia familiar. Solicitud de órdenes de protección y acompañamiento legal para la víctima.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">📁</div>
-                    <h3>Gestiones Registrales</h3>
-                    <p>Trámites ante el Registro Público de la Propiedad: inscripciones, anotaciones, rectificaciones y certificaciones.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M20 21v-2a4 4 0 00-3-3.87M9 7h.01M15 7h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <h3>Sucesiones testamentarias e intestamentarias</h3>
+                    <p>Trámites sucesorios, declaratoria de herederos y regularización de bienes por causa de muerte.</p>
+                </div>
+
+                <div class="practice-card fade-in">
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>Responsabilidades administrativas</h3>
+                    <p>Defensa de servidores públicos en procedimientos de responsabilidad administrativa. Conozco la estructura del control interno por dentro.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">👨‍👩‍👧</div>
-                    <h3>Sucesiones y Herencias</h3>
-                    <p>Procesos sucesorios intestamentarios y testamentarios, con atención sensible y eficiente para proteger el patrimonio familiar.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>Materia electoral</h3>
+                    <p>Asesoría y representación en procedimientos electorales, con experiencia directa en el Instituto y el Tribunal Electoral de Quintana Roo.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">🛡️</div>
-                    <h3>Violencia Familiar</h3>
-                    <p>Protección legal en casos de violencia familiar, órdenes de protección y estrategias jurídicas para la seguridad de la familia.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>Transparencia y protección de datos</h3>
+                    <p>Recursos de transparencia, acceso a la información pública y protección de datos personales. Fui Titular de Unidad de Transparencia del Estado.</p>
                 </div>
                 <div class="practice-card fade-in">
-                    <div class="practice-icon">💼</div>
-                    <h3>Patrimonio Familiar</h3>
-                    <p>Planificación y protección del patrimonio familiar, convenios prematrimoniales y estrategias de protección patrimonial.</p>
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>Contrataciones públicas y licitaciones</h3>
+                    <p>Asesoría en procesos de contratación pública, licitaciones y recursos administrativos en materia de adquisiciones.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>Anticorrupción</h3>
+                    <p>Asesoría en materia de anticorrupción, sistemas de cumplimiento y prevención de responsabilidades administrativas.</p>
+                </div>
+            </div>
+
+            <div class="other-matters fade-in">
+                <h3>Otras materias</h3>
+                <div class="other-matters-list">
+                    <span>Civil</span>
+                    <span>·</span>
+                    <span>Mercantil</span>
+                    <span>·</span>
+                    <span>Penal</span>
+                    <span>·</span>
+                    <span>Agraria</span>
+                    <span>·</span>
+                    <span>Fiscal</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experiencia" class="experience">
-        <div class="experience-container">
-            <div class="section-header fade-in">
-                <div class="section-label">Trayectoria Profesional</div>
-                <h2 class="section-title">Experiencia y Compromiso</h2>
-                <p class="section-subtitle">
-                    25 años de práctica jurídica respaldan cada caso. Juicios orales y tradicionales 
-                    con resultados concretos en materia familiar.
-                </p>
+    <!-- Trayectoria -->
+    <section id="trayectoria" class="experience">
+        <div class="fade-in" style="max-width: 1200px; margin: 0 auto;">
+            <div class="section-label">Trayectoria</div>
+            <h2 class="section-title">Experiencia profesional</h2>
+            <p class="section-subtitle">
+                Carrera en el servicio público, el Poder Judicial y la abogacía particular.
+                Datos verificables en el CV oficial.
+            </p>
+        </div>
+        <div class="timeline fade-in" style="max-width: 1200px; margin: 0 auto;">
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Nov 2023 – May 2025</div>
+                    <div>
+                        <div class="timeline-block-title">Tribunal Electoral de Quintana Roo</div>
+                        <div class="timeline-block-role">Secretario Auxiliar de Estudio y Cuenta</div>
+                        <div class="timeline-block-desc">Funciones establecidas en el artículo 47 del Reglamento Interno del Tribunal.</div>
+                    </div>
+                </div>
             </div>
-            <div class="timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2024 - Presente</div>
-                    <div class="timeline-content">
-                        <h3>Jiménez Duarte y Asociados</h3>
-                        <p>Fundador y abogado principal. Especialización en derecho familiar, juicios orales y gestiones integrales en Cancún y el sur de Quintana Roo.</p>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Mar – Nov 2022</div>
+                    <div>
+                        <div class="timeline-block-title">Congreso del Estado de Quintana Roo</div>
+                        <div class="timeline-block-role">Titular del Órgano Interno de Control</div>
+                        <div class="timeline-block-desc">Funciones establecidas en el artículo 36 de la Ley Orgánica del Poder Legislativo del Estado.</div>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2015 - 2024</div>
-                    <div class="timeline-content">
-                        <h3>Práctica Independiente</h3>
-                        <p>Más de 9 años de ejercicio independiente con enfoque en litigio familiar, conciliaciones y gestiones notariales e inmobiliarias.</p>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Ene 2020 – Mar 2022</div>
+                    <div>
+                        <div class="timeline-block-title">Instituto Electoral de Quintana Roo</div>
+                        <div class="timeline-block-role">Coordinador de Investigación de Responsabilidades Administrativas, Órgano Interno de Control</div>
+                        <div class="timeline-block-desc">Inicio y sustanciación de procedimientos de investigación conforme a la Ley General de Responsabilidades Administrativas.</div>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2000 - 2015</div>
-                    <div class="timeline-content">
-                        <h3>Despachos Jurídicos</h3>
-                        <p>Inicios de la carrera en diversos despachos especializados en materia civil y familiar, acumulando experiencia en juicios tradicionales.</p>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Ene 2018 – Ene 2020</div>
+                    <div>
+                        <div class="timeline-block-title">Consejería Jurídica del Poder Ejecutivo del Estado</div>
+                        <div class="timeline-block-role">Director de Enlace Interinstitucional y Titular de la Unidad de Transparencia del Estado</div>
+                        <div class="timeline-block-desc">Funciones en materia de transparencia, acceso a la información y protección de datos personales.</div>
                     </div>
                 </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">1999</div>
-                    <div class="timeline-content">
-                        <h3>Egresado UQROO</h3>
-                        <p>Licenciatura en Derecho por la Universidad Autónoma de Quintana Roo. Formación jurídica sólida con visión humanista.</p>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Jun 2017 – Actual</div>
+                    <div>
+                        <div class="timeline-block-title">Instituto Quintanarroense de la Mujer</div>
+                        <div class="timeline-block-role">Jefe del Departamento de Asuntos Jurídicos</div>
+                        <div class="timeline-block-desc">Asesoría, acompañamiento y representación legal de mujeres. Elaboración de reglamentos y proyectos de armonización legislativa.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Mar – Jun 2017</div>
+                    <div>
+                        <div class="timeline-block-title">Secretaría de la Contraloría del Estado</div>
+                        <div class="timeline-block-role">Auditor</div>
+                        <div class="timeline-block-desc">Coordinación para integración de carpetas de responsabilidad patrimonial en materia de entrega recepción.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Ene – Mar 2017</div>
+                    <div>
+                        <div class="timeline-block-title">Comisión Ejecutiva de Atención a Víctimas de Quintana Roo</div>
+                        <div class="timeline-block-role">Asesor Jurídico</div>
+                        <div class="timeline-block-desc">Representación integral de víctimas, trámite de medidas de protección y seguimiento del caso.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Jul 2016 – Ene 2017</div>
+                    <div>
+                        <div class="timeline-block-title">Despacho "Soluciones Jurídicas"</div>
+                        <div class="timeline-block-role">Abogado y Socio Fundador</div>
+                        <div class="timeline-block-desc">Litigio en materias penal, civil, familiar, mercantil, agraria y fiscal. Asesoría y protesta de mandatos judiciales.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Abr – Jun 2016</div>
+                    <div>
+                        <div class="timeline-block-title">Instituto Electoral de Quintana Roo</div>
+                        <div class="timeline-block-role">Vocal Secretario del Distrito Electoral 14</div>
+                        <div class="timeline-block-desc">Apoyo al Consejero Presidente Distrital, elaboración de acuerdos, actas y certificaciones oficiales.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Ene 2014 – Mar 2016</div>
+                    <div>
+                        <div class="timeline-block-title">Tribunal Superior de Justicia del Estado de Quintana Roo</div>
+                        <div class="timeline-block-role">Secretario de Actas Mínimas, Juzgado Familiar Oral del Distrito Judicial de Chetumal</div>
+                        <div class="timeline-block-desc">Elaboración de proyectos de sentencia, acuerdos y guías de apoyo para la Juez; asistencia en audiencias; medidas sobre custodia y divorcio.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Ene – Abr 2014</div>
+                    <div>
+                        <div class="timeline-block-title">Tribunal Superior de Justicia del Estado de Quintana Roo</div>
+                        <div class="timeline-block-role">Secretario Auxiliar, Juzgado Mercantil del Distrito Judicial de Chetumal</div>
+                        <div class="timeline-block-desc">Elaboración de acuerdos de admisión y prevención; contestación de amparos; apoyo en audiencias.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Ene 2006 – Oct 2013</div>
+                    <div>
+                        <div class="timeline-block-title">Instituto de Infraestructura Física Educativa de Quintana Roo</div>
+                        <div class="timeline-block-role">Jefe del Departamento de Recursos Materiales</div>
+                        <div class="timeline-block-desc">Procesos de licitación, compras, control de parque vehicular y administración física del edificio.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-block">
+                <div class="timeline-block-header">
+                    <div class="timeline-period">Ene – Oct 2002</div>
+                    <div>
+                        <div class="timeline-block-title">Consejo Estatal Electoral de Quintana Roo</div>
+                        <div class="timeline-block-role">Capacitador Electoral</div>
+                        <div class="timeline-block-desc">Capacitación de ciudadanos que fungieron como miembros de mesas directivas de casilla.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="educacion" class="education">
-        <div class="education-container">
-            <div class="section-header fade-in">
-                <div class="section-label">Formación Académica</div>
-                <h2 class="section-title">Educación y Certificaciones</h2>
-            </div>
-            <div class="education-grid">
-                <div class="education-card fade-in">
-                    <h3>Licenciatura en Derecho</h3>
-                    <div class="institution">Universidad Autónoma de Quintana Roo</div>
-                    <p>Formación jurídica integral con sólidos fundamentos en derecho civil, familiar y procesal.</p>
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="faq-container">
+            <div class="section-label">Preguntas frecuentes</div>
+            <h2 class="section-title">Respuestas claras, sin tecnicismos</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cuánto tiempo tarda un divorcio en Quintana Roo?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>Depende del tipo de divorcio. El divorcio incausado puede resolverse en aproximadamente 1 a 2 meses si no hay controversia adicional. Si hay disputa por bienes, custodia o pensión, el plazo se extiende según la carga del juzgado y la complejidad del caso.</p></div>
                 </div>
-                <div class="education-card fade-in">
-                    <h3>Especialización en Derecho Familiar</h3>
-                    <div class="institution">Institución Jurídica Especializada</div>
-                    <p>Estudios especializados en materia familiar, enfocados en juicio oral y estrategias de conciliación.</p>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cómo se calcula la pensión alimenticia?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>En Quintana Roo se toma en cuenta el ingreso de quien paga, las necesidades de los hijos y el régimen de convivencia. No es un porcentaje fijo; el juez lo fija caso por caso. En la primera consulta puedo darte una estimación clara.</p></div>
                 </div>
-                <div class="education-card fade-in">
-                    <h3>Certificación en Juicio Oral</h3>
-                    <div class="institution">Institución de Capacitación Legal</div>
-                    <p>Formación específica en técnicas de litigio oral aplicadas al derecho familiar y civil.</p>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué documentos necesito para un juicio de guarda y custodia?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>Generalmente se necesitan actas de nacimiento de los menores, identificación oficial, comprobante de domicilio, y, en su caso, pruebas de la relación padre-hijos. En la consulta reviso tu caso y te entrego una lista exacta.</p></div>
                 </div>
-                <div class="education-card fade-in">
-                    <h3>Mediación y Conciliación</h3>
-                    <div class="institution">Centro de Justicia Alternativa</div>
-                    <p>Certificación en métodos alternativos de resolución de conflictos familiares.</p>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué es una orden de protección y cómo la solicito?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>Es una medida urgente que ordena el juez para proteger a una víctima de violencia familiar. Se solicita ante el juzgado competente y puede incluir el alejamiento del agresor, prohibición de comunicación y resguardo del domicilio.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Puedo divorciarme si mi pareja no está de acuerdo?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>Sí. En Quintana Roo el divorcio incausado procede sin necesidad de que la otra parte esté de acuerdo. Solo se requiere cumplir los requisitos legales y presentar la demanda correspondiente.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Soy servidor público y me iniciaron un procedimiento de responsabilidad administrativa, ¿qué debo hacer?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>Acude con un abogado especializado lo antes posible. Cuentas con derecho a la audiencia, a ofrecer pruebas y a la defensa. Mi experiencia como Titular de Órgano Interno de Control me permite acompañarte en todo el procedimiento.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué pasa en la primera consulta?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>Escucho tu caso, reviso los documentos y te explico las opciones legales, plazos y costos. Es confidencial y sin compromiso. Si decides continuar, te entrego un presupuesto por escrito antes de iniciar cualquier trámite.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Atiende casos en todo el estado?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer" aria-hidden="true"><p>Sí. Mi base es Chetumal y también atiendo en Cancún. Dependiendo del tipo de caso, puedo representarte o canalizarte con un abogado de confianza en otra plaza del estado.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contacto -->
     <section id="contacto" class="contact">
         <div class="contact-container">
             <div class="contact-info fade-in">
-                <div class="section-label" style="color: rgba(255,255,255,0.6);">Contacto</div>
-                <h2>Agenda una Consulta</h2>
+                <div class="section-label" style="color: rgba(255,255,255,0.55);">Contacto</div>
+                <h2>Escribime</h2>
                 <p>
-                    Estamos listos para escuchar su caso. La primera consulta es el primer paso 
-                    para encontrar la mejor solución legal.
+                    Atiendo consultas en Chetumal y Cancún. Si preferís WhatsApp, usá el botón flotante.
                 </p>
                 <div class="contact-details">
                     <div class="contact-item">
-                        <div class="contact-item-icon">📍</div>
+                        <div class="contact-item-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
                         <div>
-                            <div class="contact-item-label">Ubicación</div>
-                            <div class="contact-item-text">Cancún, Quintana Roo, México</div>
+                            <div class="contact-item-label">Teléfono y WhatsApp</div>
+                            <div class="contact-item-text">983 125 3759</div>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-item-icon">📞</div>
+                        <div class="contact-item-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                        </div>
                         <div>
-                            <div class="contact-item-label">Teléfono</div>
-                            <div class="contact-item-text">+52 (998) 000-0000</div>
+                            <div class="contact-item-label">Correo electrónico</div>
+                            <div class="contact-item-text">Bernardo.jimenez.d@gmail.com</div>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-item-icon">✉️</div>
-                        <div>
-                            <div class="contact-item-label">Correo Electrónico</div>
-                            <div class="contact-item-text">contacto@jimenezduarteyasociados.com</div>
+                        <div class="contact-item-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item-icon">⏰</div>
                         <div>
-                            <div class="contact-item-label">Horario</div>
-                            <div class="contact-item-text">Lun - Vie: 9:00 - 18:00 hrs</div>
+                            <div class="contact-item-label">Sedes</div>
+                            <div class="contact-item-text">Chetumal y Cancún, Quintana Roo</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <form class="contact-form fade-in" id="contactForm">
+
+            <form class="contact-form fade-in" id="contactForm" action="https://formsubmit.co/Bernardo.jimenez.d@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nueva consulta desde jimenezduarteyasociados.com">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://rodrigomadera.github.io/Bernardowebsite/#contacto">
+                <input type="text" name="_honey" style="display:none">
                 <div class="form-group">
-                    <label for="name">Nombre Completo</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
                 </div>
                 <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
                 </div>
                 <div class="form-group">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
                 </div>
                 <div class="form-group">
                     <label for="message">Mensaje</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" class="btn">Enviar Mensaje</button>
+
+                <div class="disclaimer-block">
+                    <h4>Confidencialidad</h4>
+                    <p>Tu consulta es confidencial, sin compromiso y está protegida por el secreto profesional. Antes de iniciar cualquier trámite te entrego un presupuesto por escrito.</p>
+                </div>
+
+                <div class="consent">
+                    <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                    <label for="privacyConsent">Acepto el <a href="#aviso-privacidad">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos para responder esta consulta.</label>
+                </div>
+
+                <button type="submit" class="btn">Enviar mensaje</button>
+                <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+                    Mensaje enviado. Me pondré en contacto a la brevedad.
+                </div>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 <strong>Jiménez Duarte y Asociados</strong>. Todos los derechos reservados.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.75rem;">Derecho Familiar · Juicios Orales y Tradicionales · Cancún, México</p>
+        <ul class="footer-nav">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#areas">Áreas</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#aviso-privacidad">Aviso de Privacidad</a></li>
+        </ul>
+        <p>&copy; 2026 <strong>Jiménez Duarte y Asociados</strong>. Todos los derechos reservados.</p>
+        <p class="footer-cédula">
+            Lic. Bernardo Roberto Jiménez Duarte · Cédula profesional 09713637 ·
+            <a href="https://www.anr.ses.sep.gob.mx:8070/BUSQUEDAS/ConsHonConsulta.aspx" target="_blank" rel="noopener noreferrer">Verificable en el Registro Nacional de Profesionistas de la SEP</a>
+        </p>
     </footer>
 
-    <script>
-        // Scroll Progress Bar
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
-        });
+    <!-- Aviso de Privacidad -->
+    <div id="aviso-privacidad" style="display: none;">
+        <div style="position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+            <div style="background: #fff; max-width: 640px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 2rem; border-radius: 2px;" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+                <h2 id="privacyTitle" style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 1rem;">Aviso de Privacidad</h2>
+                <p><strong>Jiménez Duarte y Asociados</strong>, con sede en Chetumal y Cancún, Quintana Roo, es responsable del tratamiento de sus datos personales.</p>
+                <p><strong>Finalidad:</strong> Los datos se recaban exclusivamente para responder consultas, enviar presupuestos y prestar servicios jurídicos.</p>
+                <p><strong>Transferencias:</strong> No se transfieren datos a terceros, salvo obligación legal o requerimiento judicial.</p>
+                <p><strong>Derechos ARCO:</strong> Puede ejercer sus derechos de acceso, rectificación, cancelación y oposición escribiendo a Bernardo.jimenez.d@gmail.com.</p>
+                <p><strong>Cambios:</strong> Cualquier modificación se publicará en este sitio.</p>
+                <button class="btn" id="closePrivacy" style="margin-top: 1rem;">Cerrar</button>
+            </div>
+        </div>
+    </div>
 
-        // Mobile Menu Toggle
+    <!-- WhatsApp -->
+    <a class="whatsapp-float" href="https://wa.me/529831253759?text=Hola%2C%20licenciado.%20Me%20gustar%C3%ADa%20agendar%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script>
+        // Mobile menu
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
-
         mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            const isActive = navLinks.classList.toggle('active');
+            mobileMenuBtn.setAttribute('aria-expanded', isActive);
         });
-
-        // Close mobile menu when clicking a link
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
             });
         });
 
-        // Infinite Scroll Animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        // Scroll progress
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
 
+        // Fade in
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1181,49 +1420,54 @@
                 }
             });
         }, observerOptions);
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Smooth scroll for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('open');
+                    i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    i.querySelector('.faq-answer').setAttribute('aria-hidden', 'true');
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                    button.setAttribute('aria-expanded', 'true');
+                    item.querySelector('.faq-answer').setAttribute('aria-hidden', 'false');
                 }
             });
         });
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
+        // Form success state
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const btn = e.target.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-            btn.textContent = 'Enviado ✓';
+            const btn = contactForm.querySelector('button[type="submit"]');
             btn.disabled = true;
+            btn.textContent = 'Enviando...';
+            // Replace with real Formspree endpoint and remove simulation below
             setTimeout(() => {
-                btn.textContent = originalText;
+                btn.textContent = 'Enviar mensaje';
                 btn.disabled = false;
-                e.target.reset();
-            }, 3000);
+                formSuccess.style.display = 'block';
+                contactForm.reset();
+                setTimeout(() => { formSuccess.style.display = 'none'; }, 6000);
+            }, 1200);
         });
 
-        // Navbar background on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
-            } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = 'none';
-            }
+        // Privacy modal
+        const privacyModal = document.getElementById('aviso-privacidad');
+        document.querySelectorAll('a[href="#aviso-privacidad"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                privacyModal.style.display = 'block';
+            });
+        });
+        document.getElementById('closePrivacy').addEventListener('click', () => {
+            privacyModal.style.display = 'none';
         });
     </script>
 </body>
