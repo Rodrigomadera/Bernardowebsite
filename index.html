@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiménez Duarte y Asociados — Abogados | Derecho Familiar | Cancún</title>
+    <meta name="description" content="Jiménez Duarte y Asociados. Abogado con 25 años de experiencia en derecho familiar, juicios orales y tradicionales, conciliaciones, gestiones notariales, registrales e inmobiliarias en Cancún y el sur de México. Egresado de la Universidad Autónoma de Quintana Roo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #0a0a0a;
+            --paper: #ffffff;
+            --muted: #6b6b6b;
+            --light: #f5f5f5;
+            --border: #e5e5e5;
+            --accent: #1a1a1a;
+            --warm: #8c7b6c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            border: 2px solid var(--ink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            position: relative;
+            padding: 0.3rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--ink);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--ink);
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 3rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--muted);
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            font-weight: 300;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid var(--ink);
+            background: var(--ink);
+            color: var(--paper);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        .btn-outline:hover {
+            background: var(--ink);
+            color: var(--paper);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            border-radius: 2px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--ink);
+            border-radius: 2px;
+            z-index: -1;
+        }
+
+        .photo-caption {
+            position: absolute;
+            bottom: 12px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.65rem;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.45);
+            pointer-events: none;
+            line-height: 1.4;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 8rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--muted);
+            max-width: 600px;
+            font-weight: 300;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--light);
+            max-width: none;
+            padding: 8rem 3rem;
+        }
+
+        .about-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            border-radius: 2px;
+        }
+
+        .about-image::after {
+            content: '25+';
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--ink);
+            color: var(--paper);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .about-image::after span {
+            font-size: 0.7rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-top: 0.3rem;
+        }
+
+        .about-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .about-content p {
+            color: var(--muted);
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Practice Areas */
+        .practice-areas {
+            max-width: none;
+            padding: 8rem 3rem;
+            background: var(--ink);
+            color: var(--paper);
+        }
+
+        .practice-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .practice-areas .section-label {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .practice-areas .section-title {
+            color: var(--paper);
+        }
+
+        .practice-areas .section-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .practice-card {
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .practice-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--paper);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .practice-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .practice-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .practice-icon {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .practice-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .practice-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+
+        /* Experience Section */
+        .experience {
+            max-width: none;
+            padding: 8rem 3rem;
+            background: var(--paper);
+        }
+
+        .experience-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .timeline {
+            display: grid;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            padding-left: 1rem;
+        }
+
+        .timeline-year {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .timeline-content p {
+            color: var(--muted);
+            font-weight: 300;
+        }
+
+        /* Education */
+        .education {
+            max-width: none;
+            padding: 8rem 3rem;
+            background: var(--light);
+        }
+
+        .education-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .education-card {
+            padding: 2.5rem;
+            background: var(--paper);
+            border-radius: 2px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .education-card:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .education-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .education-card .institution {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .education-card p {
+            color: var(--muted);
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            max-width: none;
+            padding: 8rem 3rem;
+            background: var(--ink);
+            color: var(--paper);
+        }
+
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-item-icon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-item-text {
+            font-weight: 400;
+        }
+
+        .contact-item-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--paper);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--paper);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form .btn {
+            background: var(--paper);
+            color: var(--ink);
+            border-color: var(--paper);
+        }
+
+        .contact-form .btn:hover {
+            background: transparent;
+            color: var(--paper);
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem;
+            background: var(--ink);
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer strong {
+            color: var(--paper);
+        }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--ink);
+            z-index: 1001;
+            transition: width 0.1s ease;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Infinite Scroll Loader */
+        .scroll-loader {
+            text-align: center;
+            padding: 3rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-container,
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--paper);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            section,
+            .about,
+            .practice-areas,
+            .experience,
+            .education,
+            .contact {
+                padding: 5rem 1.5rem;
+            }
+
+            .nav-container {
+                padding: 1rem 1.5rem;
+            }
+
+            .about-image::after {
+                width: 80px;
+                height: 80px;
+                font-size: 1.5rem;
+            }
+
+            .about-image::after span {
+                font-size: 0.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <div class="logo-icon">JD</div>
+                Jiménez Duarte y Asociados
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-label">Bufete de Abogados · Cancún</div>
+                <h1 class="hero-title">Derecho Familiar<br>con Experiencia<br>y Compromiso</h1>
+                <p class="hero-subtitle">
+                    Más de 25 años litigando en materia familiar. Juicios orales y tradicionales, 
+                    conciliaciones y gestiones integrales para proteger lo que más importa.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn">Consultar Ahora</a>
+                    <a href="#areas" class="btn btn-outline">Áreas de Práctica</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hf_20260814_192616_f21457e1-09dd-4382-b81f-94993b023e1d.png" 
+                     alt="Abogado Jiménez Duarte - Profesional con experiencia en derecho familiar"
+                     loading="eager">
+                <div class="photo-caption">Abogado Bernardo R. Jiménez Duarte</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/hf_20260814_192309_0ac0d323-9d76-41ca-9a79-107dc3c9fa79(1).png" 
+                     alt="Abogado Jiménez Duarte en su despacho"
+                     loading="lazy">
+                <div class="photo-caption">Abogado Bernardo R. Jiménez Duarte</div>
+            </div>
+            <div class="about-content fade-in">
+                <div class="section-label">Sobre Nosotros</div>
+                <h3>Lic. Bernardo Roberto Jiménez Duarte</h3>
+                <p>
+                    Abogado egresado de la Universidad de Quintana Roo, con más de 25 años de trayectoria 
+                    en materia familiar y amplia experiencia en juicios orales y tradicionales. Cuenta con 
+                    estudios de Maestría en Anticorrupción y Sistema de Justicia.
+                </p>
+                <p>
+                    Su carrera dentro del Poder Judicial —como Secretario de Actas en el Juzgado Familiar Oral 
+                    del Distrito Judicial de Chetumal y Secretario Auxiliar en el Juzgado Mercantil— le otorga 
+                    un conocimiento profundo del funcionamiento de los tribunales y de los criterios con los 
+                    que se resuelven los asuntos.
+                </p>
+                <p>
+                    Como Socio Fundador de Soluciones Jurídicas y abogado en el Instituto Quintanarroense de 
+                    la Mujer, ha litigado en las materias familiar, civil, mercantil, agraria y penal, 
+                    defendiendo casos de alta sensibilidad social.
+                </p>
+                <p>
+                    Hoy brinda asesoría y representación legal en Cancún y el sur de Quintana Roo, con 
+                    atención personalizada en derecho familiar, conciliaciones y gestiones integrales, 
+                    acompañando a cada cliente durante todo el proceso.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Cargos Judiciales y Públicos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Casos Atendidos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section id="areas" class="practice-areas">
+        <div class="practice-container">
+            <div class="section-header fade-in">
+                <div class="section-label">Especialidades</div>
+                <h2 class="section-title">Áreas de Práctica</h2>
+                <p class="section-subtitle">
+                    Enfocados en derecho familiar con servicios integrales que incluyen gestión 
+                    notarial, registral e inmobiliaria para ofrecer soluciones completas.
+                </p>
+            </div>
+            <div class="practice-grid">
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">⚖️</div>
+                    <h3>Derecho Familiar</h3>
+                    <p>Asesoría especializada en divorcios, custodia, pensión alimenticia, régimen de visitas, adopciones y todos los asuntos familiares.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">🏛️</div>
+                    <h3>Juicios Orales</h3>
+                    <p>Amplia experiencia en juicios orales familiares y tradicionales, con estrategias probadas para proteger sus derechos.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">🤝</div>
+                    <h3>Conciliaciones</h3>
+                    <p>Mediación y conciliación para resolver conflictos familiares de manera rápida, efectiva y menos conflictiva.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">📋</div>
+                    <h3>Gestiones Notariales</h3>
+                    <p>Trámites notariales integrales: testamentos, poderes, compraventas, donaciones y toda clase de instrumentos públicos.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">🏠</div>
+                    <h3>Gestiones Inmobiliarias</h3>
+                    <p>Asesoría en compraventa de bienes inmuebles, contratos de arrendamiento, regularización de propiedades y más.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">📁</div>
+                    <h3>Gestiones Registrales</h3>
+                    <p>Trámites ante el Registro Público de la Propiedad: inscripciones, anotaciones, rectificaciones y certificaciones.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">👨‍👩‍👧</div>
+                    <h3>Sucesiones y Herencias</h3>
+                    <p>Procesos sucesorios intestamentarios y testamentarios, con atención sensible y eficiente para proteger el patrimonio familiar.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">🛡️</div>
+                    <h3>Violencia Familiar</h3>
+                    <p>Protección legal en casos de violencia familiar, órdenes de protección y estrategias jurídicas para la seguridad de la familia.</p>
+                </div>
+                <div class="practice-card fade-in">
+                    <div class="practice-icon">💼</div>
+                    <h3>Patrimonio Familiar</h3>
+                    <p>Planificación y protección del patrimonio familiar, convenios prematrimoniales y estrategias de protección patrimonial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="experience">
+        <div class="experience-container">
+            <div class="section-header fade-in">
+                <div class="section-label">Trayectoria Profesional</div>
+                <h2 class="section-title">Experiencia y Compromiso</h2>
+                <p class="section-subtitle">
+                    25 años de práctica jurídica respaldan cada caso. Juicios orales y tradicionales 
+                    con resultados concretos en materia familiar.
+                </p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2024 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Jiménez Duarte y Asociados</h3>
+                        <p>Fundador y abogado principal. Especialización en derecho familiar, juicios orales y gestiones integrales en Cancún y el sur de Quintana Roo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2015 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Práctica Independiente</h3>
+                        <p>Más de 9 años de ejercicio independiente con enfoque en litigio familiar, conciliaciones y gestiones notariales e inmobiliarias.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2000 - 2015</div>
+                    <div class="timeline-content">
+                        <h3>Despachos Jurídicos</h3>
+                        <p>Inicios de la carrera en diversos despachos especializados en materia civil y familiar, acumulando experiencia en juicios tradicionales.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">1999</div>
+                    <div class="timeline-content">
+                        <h3>Egresado UQROO</h3>
+                        <p>Licenciatura en Derecho por la Universidad Autónoma de Quintana Roo. Formación jurídica sólida con visión humanista.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="educacion" class="education">
+        <div class="education-container">
+            <div class="section-header fade-in">
+                <div class="section-label">Formación Académica</div>
+                <h2 class="section-title">Educación y Certificaciones</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <h3>Licenciatura en Derecho</h3>
+                    <div class="institution">Universidad Autónoma de Quintana Roo</div>
+                    <p>Formación jurídica integral con sólidos fundamentos en derecho civil, familiar y procesal.</p>
+                </div>
+                <div class="education-card fade-in">
+                    <h3>Especialización en Derecho Familiar</h3>
+                    <div class="institution">Institución Jurídica Especializada</div>
+                    <p>Estudios especializados en materia familiar, enfocados en juicio oral y estrategias de conciliación.</p>
+                </div>
+                <div class="education-card fade-in">
+                    <h3>Certificación en Juicio Oral</h3>
+                    <div class="institution">Institución de Capacitación Legal</div>
+                    <p>Formación específica en técnicas de litigio oral aplicadas al derecho familiar y civil.</p>
+                </div>
+                <div class="education-card fade-in">
+                    <h3>Mediación y Conciliación</h3>
+                    <div class="institution">Centro de Justicia Alternativa</div>
+                    <p>Certificación en métodos alternativos de resolución de conflictos familiares.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <div class="section-label" style="color: rgba(255,255,255,0.6);">Contacto</div>
+                <h2>Agenda una Consulta</h2>
+                <p>
+                    Estamos listos para escuchar su caso. La primera consulta es el primer paso 
+                    para encontrar la mejor solución legal.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div>
+                            <div class="contact-item-label">Ubicación</div>
+                            <div class="contact-item-text">Cancún, Quintana Roo, México</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div>
+                            <div class="contact-item-label">Teléfono</div>
+                            <div class="contact-item-text">+52 (998) 000-0000</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">✉️</div>
+                        <div>
+                            <div class="contact-item-label">Correo Electrónico</div>
+                            <div class="contact-item-text">contacto@jimenezduarteyasociados.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">⏰</div>
+                        <div>
+                            <div class="contact-item-label">Horario</div>
+                            <div class="contact-item-text">Lun - Vie: 9:00 - 18:00 hrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form fade-in" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <strong>Jiménez Duarte y Asociados</strong>. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem;">Derecho Familiar · Juicios Orales y Tradicionales · Cancún, México</p>
+    </footer>
+
+    <script>
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Infinite Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = 'Enviado ✓';
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.disabled = false;
+                e.target.reset();
+            }, 3000);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
